@@ -27,6 +27,7 @@ body.dark #banner {
 .arrow {
     border: none;
     background: none;
+    cursor: pointer;
 }
 .arrow img {
     width: 5vw;
