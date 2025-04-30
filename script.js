@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const home = document.getElementById('home');
     const resources = document.getElementById('resources');
     toggleButton.textContent="Dark Mode";
-    toggleButton.style.backgroundColor="white";
-    toggleButton.style.color="black";
+    toggleButton.style.backgroundColor="transparent";
+    home.style.backgroundColor="transparent";
+    resources.style.backgroundColor="transparent";
 
     toggleButton.addEventListener('click', function() {
         window.mode = !window.mode;
         if(window.mode) {
             toggleButton.textContent = "Dark Mode";
-            toggleButton.backgroundColor="white";
             toggleButton.style.color="black";
             home.style.color="black";
             resources.style.color="black";
@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else{
             toggleButton.textContent="Light Mode";
-            toggleButton.backgroundColor="black";
             toggleButton.style.color="white";
             home.style.color="white";
             resources.style.color="white";
