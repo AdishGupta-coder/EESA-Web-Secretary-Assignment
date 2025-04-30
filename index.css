@@ -1,0 +1,103 @@
+header button {
+    background-color: transparent;
+    border: 0;
+    font-size: small;
+    font-weight:600;
+    cursor: pointer;
+}
+
+body, hr {
+    margin: 0%;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("images/light_bg.png");
+    background-size: 50%;
+    background-repeat: repeat;
+}
+body.dark #banner {
+    background-image: url("images/dark_bg.jpeg");
+    background-size: 50%;
+    background-repeat: repeat;
+}
+
+.arrow {
+    border: none;
+    background: none;
+}
+.arrow img {
+    width: 5vw;
+    height: auto;
+}
+
+header, footer {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body.dark header, body.dark footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0%;
+    text-align: center;
+}
+
+#slideshow {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    position: relative;
+    overflow: hidden;
+    width: 80vw;
+    height: 532px;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    object-fit:contain;
+
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+#heading, #members {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#council-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#council {
+    background: url("images/light_bg.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    color: blue;
+    padding-bottom: 10px;
+}
+
+body.dark #council {
+    background: url("images/dark_bg.jpeg");
+    background-repeat: repeat;
+    background-size: 50%;;
+    color: yellow;
+}

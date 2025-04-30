@@ -1,0 +1,102 @@
+body, hr, h2{
+    margin: 0%;
+}
+
+header button {
+    background-color: transparent;
+    border: 0;
+    font-size: small;
+    font-weight:600;
+    cursor: pointer;
+}
+
+main {
+    margin: 0%;
+    background-image: url("images/res_bg_light.jpeg");
+    background-size: 100%;
+}
+body.dark main {
+    background-image: url("images/res_bg_dark.png");
+    background-size:100%;
+}
+
+header, footer {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body.dark header, body.dark footer {
+    background-color: black;
+    color: white;
+}
+
+footer p {
+    margin: 0%;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lora';
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    border: 2.5px solid black;
+    justify-self:stretch;
+}
+th, td {
+    border: 1.5px solid black;
+}
+
+body.dark table {
+    border: 2.5px solid antiquewhite;
+}
+
+body.dark th, body.dark td {
+    border: 1.5px solid antiquewhite;
+}
+
+#table {
+    padding-bottom: 25px;
+    text-align: center;
+    color: black;
+}
+body.dark #table {
+    color: whitesmoke;
+}
+
+body.dark td a{
+    color: yellowgreen;
+}
+
+#blogs {
+    padding-bottom: 10px;
+}
+
+#blogs h2 {
+    text-align: center;
+    color: black;
+}
+body.dark #blogs h2 {
+    color: whitesmoke;
+}
+
+#blog_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog {
+    max-width: 320px;
+    background-color: hotpink;
+    text-align: center;
+}
+body.dark #blog {
+    background-color: green;
+    color: antiquewhite;
+}
